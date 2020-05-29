@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/content_main">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/color_primary"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="18dp"
+                        android:text="Student's Records"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_people_white_24dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/student_count"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/color_white"
+                                android:textSize="60dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/color_success"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="18dp"
+                        android:text="Class Section's Records"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_account_balance_black_24dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/class_section_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/color_white"
+                                android:textSize="60dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#17A2B8"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="18dp"
+                        android:text="Subjects Records"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_book"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/subject_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="0"
+                                android:textColor="@color/color_white"
+                                android:textSize="60dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="#DC3545"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="18sp"
+                        android:text="Attendance Records"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_assignment_ind_w_24dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="15dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:textColor="@color/color_white"
+                                android:textSize="18sp"
+                                android:text="Absentees"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Today:"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                                <TextView
+                                    android:id="@+id/absent_today_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="0"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="This week:"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                                <TextView
+                                    android:id="@+id/absent_week_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="0"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="This month:"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                                <TextView
+                                    android:id="@+id/absent_month_count"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="0"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFC107"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="5dp"
+                        android:text="SMS Records"
+                        android:textColor="@color/color_white"
+                        android:textSize="18dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_email_w_24dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/unsent_sms"
+                                    android:layout_gravity="bottom"
+                                    android:text="0"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="60dp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:layout_marginStart="5dp"
+                                    android:text="Sent"
+                                    android:textColor="@color/color_white"
+                                    android:textSize="16dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
+
+
+
+
+</ScrollView>
+
+
+
+
+</LinearLayout>

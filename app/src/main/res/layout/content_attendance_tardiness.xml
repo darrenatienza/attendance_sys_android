@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.attendance.AttendanceTardinessActivity"
+    tools:showIn="@layout/activity_attendance_tardiness">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Select Message to Send"
+            android:textColor="@color/color_primary"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLateTodayCount" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="This message will be send to the guardian of the student"
+            android:textColor="@color/color_warning"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/tvTotalLateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Late"
+            android:textColor="@color/color_warning"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/tvLateTodayCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Late on"
+            android:textColor="@color/color_warning"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvPresentTodayCount"
+            app:layout_constraintTop_toBottomOf="@+id/tvPresentTodayCount" />
+
+        <TextView
+            android:id="@+id/tvTotalAbsentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Absent"
+            android:textColor="@color/color_danger"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvTotalLateCount"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalLateCount" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/color_primary"
+            android:text="Student Name"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Tanani"
+            android:textColor="@color/color_info"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Class Section"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvStudentName" />
+
+        <TextView
+
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Contact Person"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvClassSectionName"
+            app:layout_constraintTop_toBottomOf="@+id/tvClassSectionName" />
+
+        <TextView
+            android:id="@+id/tvClassSectionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Class 1"
+            android:textColor="@color/color_info"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/tvContactPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Contact Person@09091234567"
+            android:textColor="@color/color_info"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:text="Today Stats"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvClassSectionName" />
+
+        <TextView
+
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Grading Period Stats"
+            android:textColor="@color/color_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/tvPresentTodayCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Present on"
+            android:textColor="@color/color_success"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+            <RadioButton
+                android:id="@+id/radio_today_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Today Absent"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_3day_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="3 Day Absent"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/radio_3late"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="3 Lates"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

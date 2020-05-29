@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_attendance_tardiness"
+    >
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        card_view:cardBackgroundColor="@color/color_white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#295497"></LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/tv343"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today Stats:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2097ff"
+                android:textSize="@dimen/summary_text_size1"
+                card_view:layout_constraintStart_toStartOf="@+id/tvClassSectionName"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvClassSectionName" />
+
+            <TextView
+                android:id="@+id/tvStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Student Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#1645ff"
+                android:textSize="16dp"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvClassSectionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Section"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#707070"
+                android:textSize="14dp"
+                card_view:layout_constraintStart_toStartOf="@+id/tvStudentName"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvStudentName" />
+
+
+            <TextView
+                android:id="@+id/tvAbsentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="12dp"
+                android:text="Total Absent: 0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#bc0000"
+                android:textSize="@dimen/summary_text_size1"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPresentTodayCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present Today: 0/0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#00b30f"
+                android:textSize="@dimen/summary_text_size1"
+                card_view:layout_constraintStart_toStartOf="@+id/tv343"
+                card_view:layout_constraintTop_toBottomOf="@+id/tv343" />
+
+            <TextView
+                android:id="@+id/tvLateTodayCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Late Today: 0/0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff8181"
+                android:textSize="@dimen/summary_text_size1"
+                card_view:layout_constraintStart_toStartOf="@+id/tvPresentTodayCount"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvPresentTodayCount" />
+
+            <TextView
+                android:id="@+id/tvLateCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Total Late: 0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#c97a04"
+                android:textSize="@dimen/summary_text_size1"
+                card_view:layout_constraintStart_toStartOf="@+id/tvAbsentCount"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvAbsentCount" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

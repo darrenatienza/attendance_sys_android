@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.batstateu_ros_cpt.attendancesystem2">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".library.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/deped_logo"
+        android:label="@string/app_name_mine"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+        <activity
+            android:name=".MainActivity_"
+            android:label="@string/app_name_mine"
+            android:theme="@style/AppTheme3"></activity>
+        <activity
+            android:name=".activities.student.StudentListActivity_"
+            android:label="@string/title_activity_students"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".activities.student.StudentUpdateActivity_" />
+        <activity
+            android:name=".activities.subject.SubjectListActivity_"
+            android:label="@string/title_activity_subject_list"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.subject.SubjectUpdateActivity_"
+            android:label="@string/title_actvity_subject_update" />
+        <activity
+            android:name=".activities.subject.SubjectEnrollesActivity_"
+            android:label="@string/title_activity_subject_enrolles"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.class_section.ClassSectionListActivity_"
+            android:label="@string/title_activity_class_section_list"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.class_section.ClassSectionUpdateActivity_"
+            android:label="@string/title_activity_class_section_update" />
+        <activity
+            android:name=".activities.attendance.AttendanceListActivity_"
+            android:label="@string/title_activity_attenance_list"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.attendance.AttendanceSubjectList_"
+            android:label="@string/title_activity_attendance_subject_list"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.sms.SmsDetailActivity_"
+            android:label="@string/title_sms_detail" />
+        <activity
+            android:name=".activities.user.UserListActivity_"
+            android:label="@string/title_activity_user_list"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.user.UserUpdateActivity_"
+            android:label="@string/title_actvity_user_update" />
+        <activity
+            android:name=".activities.school_year.SchoolYearListActivity_"
+            android:label="@string/title_activity_school_year"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".activities.school_year.SchoolYearUpdateActivity_"
+            android:label="@string/title_activity_school_year_update" />
+        <activity
+            android:name=".activities.sms.SmsListActivity2_"
+            android:label="@string/title_sms_list"
+            android:theme="@style/AppTheme3"/>
+        <activity
+            android:name=".activities.attendance.PerfectAttendanceActivity_"
+            android:label="@string/title_activity_perfect_attendance"
+            android:theme="@style/AppTheme3"/>
+        <activity
+            android:name=".activities.login.LoginActivity_"
+            android:label="@string/title_app_name"
+            android:theme="@style/AppTheme3">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.attendance.AttendanceTardinessListActivity_"
+            android:label="@string/title_activity_attendance_tardiness_list"
+            android:theme="@style/AppTheme3"/>
+        <activity
+            android:name=".activities.attendance.AttendanceTardinessActivity_"
+            android:label="@string/title_activity_attendance_tardiness"
+            android:theme="@style/AppTheme3"></activity>
+    </application>
+
+</manifest>

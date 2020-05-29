@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.login.LoginActivity">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </View>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Attendance System"
+        android:textColor="@color/color_white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Input your correct credentials here"
+        android:textAlignment="center"
+        android:textColor="@color/color_white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="User Name"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/color_white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/color_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/color_white"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/color_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginTop="8dp"
+        android:text="Password"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserName" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deped_logo" />
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
+        android:minWidth="@dimen/demo_button_min_width"
+        android:minHeight="@dimen/demo_button_min_height"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        app:fButtonColor="@color/fbutton_color_emerald"
+        app:layout_constraintEnd_toEndOf="@+id/etPassword"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:shadowEnabled="true" />
+
+</android.support.constraint.ConstraintLayout>

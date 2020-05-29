@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_students"
+            android:icon="@drawable/ic_student"
+            android:title="Manage Students" />
+        <item
+            android:id="@+id/nav_class_section"
+            android:icon="@drawable/ic_group_white_24dp"
+            android:title="Manage Class Sections" />
+        <item
+            android:id="@+id/nav_subject"
+            android:icon="@drawable/ic_book"
+            android:title="Manage Subjects" />
+        <item
+            android:id="@+id/nav_schoolYear"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Manage Academic Year" />
+
+        <item
+            android:id="@+id/nav_sms"
+            android:icon="@drawable/ic_mail"
+            android:title="Manage SMS" />
+    </group>
+    <item android:title="Attendance">
+        <menu>
+            <item
+                android:id="@+id/nav_attendance"
+                android:icon="@drawable/ic_playlist_add_check_white_24dp"
+                android:title="Manage Attendance" />
+            <item
+            android:id="@+id/nav_perfect_attendance"
+            android:icon="@drawable/ic_check_w_24dp"
+            android:title="View Perfect Attendance" />
+            <item
+                android:id="@+id/nav_attendance_tardiness"
+                android:icon="@drawable/ic_warning_w_24dp"
+                android:title="View Attendance Tardiness" />
+        </menu>
+    </item>
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_users"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Manage Users" />
+        </menu>
+    </item>
+
+</menu>

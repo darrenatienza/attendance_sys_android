@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.attendance.AttendanceSubjectList"
+    tools:showIn="@layout/activity_attendance_subject_list">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/filter_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Filter Bar -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/color_primary"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Filter"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+            <!-- -->
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spSchoolYear"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+
+                android:layout_marginEnd="8dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+                app:smsp_arrowColor="@color/color_primary"
+                app:smsp_floatingLabelColor="@color/color_primary"
+                app:smsp_floatingLabelSize="12dp"
+                app:smsp_floatingLabelText="@string/label_school_year"
+                app:smsp_hint="@string/label_school_year"
+                app:smsp_hintColor="#FF6C6C6C"
+                app:smsp_hintSize="12dp"
+                app:smsp_isSearchable="false"
+                app:smsp_itemColor="@color/color_info"
+                app:smsp_itemListColor="#FF6C6C6C"
+                app:smsp_itemListHintBackgroundColor="@color/color_primary"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_itemSize="16dp"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/color_info"
+                app:smsp_underlineColor="@color/color_primary"
+                app:smsp_underlineSize="0.3dp" />
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spGradingPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spSchoolYear"
+                app:smsp_arrowColor="@color/color_primary"
+                app:smsp_floatingLabelColor="@color/color_primary"
+                app:smsp_floatingLabelSize="12dp"
+                app:smsp_floatingLabelText="@string/label_grading_period"
+                app:smsp_hint="@string/label_grading_period"
+                app:smsp_hintColor="#FF6C6C6C"
+                app:smsp_hintSize="12dp"
+                app:smsp_isSearchable="false"
+                app:smsp_itemColor="@color/color_info"
+                app:smsp_itemListColor="#FF6C6C6C"
+                app:smsp_itemListHintBackgroundColor="@color/colorPrimary"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_itemSize="16dp"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/color_info"
+                app:smsp_underlineColor="@color/color_primary"
+                app:smsp_underlineSize="0.3dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spGradingPeriod">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etDateFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Date From"
+                    android:inputType="date"
+                    android:textColor="#0035e9"
+                    android:textSize="18dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:theme="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etDateTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Date To"
+                    android:inputType="date"
+                    android:textColor="#0035e9"
+                    android:textSize="18dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <!-- Result Bar -->
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/color_warning"
+                android:padding="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Results"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <!-- A RecyclerView with some commonly used attributes -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:scrollbars="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+        </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

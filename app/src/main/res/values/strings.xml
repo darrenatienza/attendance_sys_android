@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">AttendanceSystem2</string>
+    <string name="app_name_mine">Attendance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Attendance System</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Hints</string>
+    <string name="title_activity_students">Students</string>
+    <string name="title_activity_subject_enrolles">SubjectEnrollesActivity</string>
+    <string name="title_activity_class_section_update">Update Class Section Detail</string>
+    <string name="title_activity_class_section_list">Class Sections</string>
+    <string name="title_activity_attenance_list">Attendance Records</string>
+    <string name="title_activity_attendance_subject_list">Attendance Records</string>
+    <string name="title_activity_subject_list">Subjects </string>
+    <string name="title_sms_detail">SMS Details</string>
+    <string name="title_activity_user_list">User List</string>
+    <string name="title_actvity_user_update">Update User Detail</string>
+    <string name="title_actvity_subject_update">Update Subject Detail</string>
+    <string name="button_save">Save</string>
+    <string name="button_send">Send</string>
+    <string name="button_reSend">Resend</string>
+    <string name="title_activity_school_year">Academic Year List</string>
+    <string name="title_activity_school_year_update">Academic Year Detail</string>
+    <string name="title_sms_list">SMS List</string>
+    <string name="label_grading_period">Grading Period</string>
+    <string name="label_class_section">Class Section</string>
+    <string name="label_subject">Subject</string>
+    <string name="label_generate">Generate</string>
+    <string name="label_student_detail">Student Details</string>
+    <string name="label_all_required">Required</string>
+    <string name="title_activity_perfect_attendance">Perfect Attendance</string>
+    <string name="label_school_year">School Year</string>
+    <string name="label_quarter">Quarter</string>
+    <string name="validation_name">invalid value</string>
+    <string name="validation_name_length">1</string>
+    <string name="title_activity_login">Log in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="login">Login</string>
+    <string name="title_activity_attendance_tardiness_list">Attendance Tardiness List</string>
+    <string name="title_app_name">Attendance System</string>
+    <string name="title_activity_attendance_tardiness">Attendance Tardiness</string>
+</resources>

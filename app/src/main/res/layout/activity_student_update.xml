@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.student.StudentUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+        <!-- Required Bar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/color_danger">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/label_all_required"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <!-- -->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/TextLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/studentCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Student Code"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:textColor="#0035e9" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:textColor="#0035e9" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Address"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:textColor="#0035e9" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/contactPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Contact Person"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:textColor="#0035e9" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:id="@+id/contactPersonNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact Person #"
+                android:inputType="text|phone"
+                android:textColor="#0035e9"
+                android:textSize="18dp" />
+        </android.support.design.widget.TextInputLayout>
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/class_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown"
+                app:smsp_floatingLabelText="@string/label_class_section"
+                app:smsp_floatingLabelColor="@color/color_primary"
+                app:smsp_floatingLabelSize="12dp"
+                app:smsp_hint="@string/label_class_section"
+                app:smsp_arrowColor="@color/color_primary"
+                app:smsp_isSearchable="false"
+                app:smsp_hintColor="#FF6C6C6C"
+                app:smsp_itemColor="@color/color_info"
+                app:smsp_itemListColor="#FF6C6C6C"
+                app:smsp_itemListHintBackgroundColor="@color/color_primary"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_itemSize="15dp"
+                app:smsp_multilineError="false"
+                app:smsp_underlineColor="@color/color_primary"
+                app:smsp_selectedItemListColor="@color/color_info" />
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_save_white_24dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="10dp"
+            android:minHeight="@dimen/demo_button_min_height"
+            android:minWidth="@dimen/demo_button_min_width"
+            android:text="@string/button_save"
+            android:textColor="@android:color/white"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            app:fButtonColor="@color/color_success"
+            app:shadowEnabled="false" />
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

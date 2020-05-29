@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.sms.SmsListActivity"
+    tools:showIn="@layout/activity_sms_list">
+
+    <LinearLayout
+        android:id="@+id/filter_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <!-- Filter Bar -->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@color/color_primary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Filter"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <!-- /Filter Bar -->
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spSchoolYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            app:smsp_floatingLabelText="@string/label_class_section"
+            app:smsp_floatingLabelColor="@color/color_primary"
+            app:smsp_floatingLabelSize="12dp"
+            app:smsp_hint="@string/label_class_section"
+            app:smsp_arrowColor="@color/color_primary"
+            app:smsp_isSearchable="false"
+            app:smsp_hintColor="#FF6C6C6C"
+            app:smsp_itemColor="@color/color_info"
+            app:smsp_itemListColor="#FF6C6C6C"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_itemSize="15dp"
+            app:smsp_multilineError="false"
+            app:smsp_underlineColor="@color/color_primary"
+            app:smsp_selectedItemListColor="@color/color_info" />
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spGradingPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:spinnerMode="dropdown"
+            app:smsp_floatingLabelText="@string/label_subject"
+            app:smsp_floatingLabelColor="@color/color_primary"
+            app:smsp_floatingLabelSize="12dp"
+            app:smsp_hint="@string/label_subject"
+            app:smsp_arrowColor="@color/color_primary"
+            app:smsp_isSearchable="false"
+            app:smsp_hintColor="#FF6C6C6C"
+            app:smsp_itemColor="@color/color_info"
+            app:smsp_itemListColor="#FF6C6C6C"
+            app:smsp_itemListHintBackgroundColor="#808080"
+            app:smsp_itemListHintColor="#FFFFFF"
+            app:smsp_itemSize="15dp"
+            app:smsp_multilineError="false"
+            app:smsp_underlineColor="@color/color_primary"
+            app:smsp_selectedItemListColor="@color/color_info" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scrollbars="vertical" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnClose"/>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

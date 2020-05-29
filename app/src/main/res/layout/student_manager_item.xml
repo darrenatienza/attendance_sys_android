@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_menu_camera"
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:shadow="true" />
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="257dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/img"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:ellipsize="marquee"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="Naturally Flavored Fruit &amp; Herb Detox Water"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttitle"
+        android:layout_alignStart="@+id/txttitle"
+        android:layout_alignLeft="@+id/txttitle"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingBottom="10dp"
+        android:text="This tasty brew only takes ten minutes to prepare."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        app:layout_constraintStart_toStartOf="@+id/txttitle"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="82dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/img"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toEndOf="@+id/txtdesc"
+        app:layout_constraintTop_toBottomOf="@+id/txttitle" />
+
+</android.support.constraint.ConstraintLayout>

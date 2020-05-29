@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.sms.SmsDetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <!-- Required Bar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/color_danger">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/label_all_required"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <!-- -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/etRecipient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:hint="Recepient"
+                    android:textSize="18dp"
+                    android:inputType="text"
+                    android:textColor="#0035e9" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/etMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:hint="Message"
+                    android:textSize="18dp"
+                    android:inputType="textMultiLine"
+                    android:textColor="#0035e9" />
+            </android.support.design.widget.TextInputLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_send"
+                android:layout_gravity="right|top"
+                android:layout_margin="10dp"
+                android:minHeight="@dimen/demo_button_min_height"
+                android:minWidth="@dimen/demo_button_min_width"
+                android:text="@string/button_send"
+                android:textColor="@android:color/white"
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                app:fButtonColor="@color/color_success"
+                app:shadowEnabled="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
